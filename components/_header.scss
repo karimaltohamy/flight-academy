@@ -1,0 +1,175 @@
+$primary-color: #d11317;
+$dark-color: #051723;
+
+// start header
+header {
+  padding: 5px;
+  // background-color: #0e1229 !important;
+  color: white !important;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      img {
+        width: 75px;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .link {
+        font-weight: 500;
+        font-size: 16px;
+
+        &.active {
+          color: $primary-color !important;
+        }
+      }
+    }
+
+    .info_header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .lnag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+
+      .btn_contact {
+        background-color: $primary-color;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 8px 25px;
+        border-radius: 6px;
+      }
+
+      .btn_menu {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .container {
+      .logo {
+        img {
+          width: 55px;
+        }
+      }
+
+      .links {
+        display: none;
+      }
+
+      .info_header {
+        .lnag {
+          i {
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .btn_contact {
+          padding: 5px 15px;
+          font-size: 14px;
+          display: none;
+        }
+
+        .btn_menu {
+          display: block;
+          cursor: pointer;
+
+          i {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+// end header
+
+// start menu_mobile
+
+.overflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.393);
+  z-index: 998;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.menu_mobile {
+  padding: 20px;
+  color: $dark-color;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  z-index: 999;
+  transition: all 0.4s;
+
+  &.active {
+    left: 0;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    i {
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+
+  .links {
+    a {
+      font-size: 20px;
+      font-weight: 500;
+      display: block;
+
+      margin-bottom: 15px;
+
+      &.active {
+        color: $primary-color !important;
+      }
+    }
+  }
+}
+// end menu_mobile
