@@ -1,0 +1,446 @@
+$primary-color: #d11317;
+$dark-color: #051723;
+
+// start course_info
+.course_info {
+  padding: 80px;
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    > div {
+      width: 50%;
+    }
+
+    .left {
+      .title {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: gray;
+      }
+
+      .quote {
+        .icon {
+          margin-bottom: 10px;
+          i {
+            color: $primary-color;
+            font-size: 43px;
+          }
+        }
+
+        .quote_text {
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 1.7;
+          margin-bottom: 15px;
+        }
+
+        .profile {
+          h5 {
+            margin-bottom: 0;
+            font-weight: 700;
+          }
+
+          span {
+            font-size: 14px;
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+
+      .image_mini {
+        position: absolute;
+        bottom: -30px;
+        left: -20px;
+        border: 10px solid white;
+
+        img {
+          width: 300px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course_info {
+    padding: 40px 0;
+
+    .line {
+      flex-direction: column;
+      gap: 20px;
+
+      > div {
+        width: 100%;
+      }
+
+      .left {
+        .title {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        .desc {
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+
+        .quote {
+          .icon {
+            margin-bottom: 10px;
+
+            i {
+              font-size: 30px;
+            }
+          }
+
+          .quote_text {
+            font-size: 13px;
+          }
+
+          .profile {
+            h5 {
+              font-size: 17px;
+            }
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .right {
+        .image {
+          img {
+            border-radius: 10px;
+          }
+        }
+
+        .image_mini {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// end course_info
+
+// start course_details
+.course_details {
+  padding: 90px 0;
+  background-color: $dark-color;
+  color: white;
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+    .box {
+      img {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      span {
+        color: $primary-color;
+        font-weight: 5600;
+      }
+    }
+  }
+
+  .faq_courses {
+    margin-top: 30px;
+
+    .accordion {
+      .accordion-item {
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        .accordion-button {
+          border: none;
+          border-radius: 7px;
+          font-weight: 600;
+          background-color: transparent;
+          color: white;
+          font-size: 30px;
+          font-weight: 700;
+
+          //   &:not(.collapsed) {
+          //     background-color: $primary-color !important;
+          //   }
+        }
+
+        .accordion-body {
+          padding: 20px 40px;
+
+          .items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 700px;
+            margin: auto;
+
+            .item {
+              text-align: center;
+              .head {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $primary-color;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                img {
+                  width: 25px;
+                }
+              }
+            }
+          }
+
+          .desc {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course_details {
+    padding: 40px 0;
+
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 30px;
+      .box {
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        h4 {
+          font-size: 17px;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 11px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .faq_courses {
+      .accordion {
+        .accordion-item {
+          .accordion-button {
+            font-size: 16px;
+            padding: 10px;
+          }
+
+          .accordion-body {
+            padding: 10px;
+
+            .items {
+              .item {
+                .head {
+                  gap: 5px;
+                  margin-bottom: 9px;
+                  font-size: 14px;
+
+                  img {
+                    width: 18px;
+                  }
+                }
+
+                h5 {
+                  font-size: 17px;
+                }
+              }
+            }
+
+            .desc {
+              margin-top: 15px;
+              font-size: 13px;
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end course_details
+
+// start language_assessment
+.language_assessment {
+  padding: 100px;
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-image: url(../images/circle-bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    > div {
+      width: 50%;
+    }
+
+    .left {
+      .subtitle {
+        font-size: 17px;
+        color: $primary-color;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        color: rgb(127, 127, 127);
+        line-height: 1.7;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .btn_welcome {
+        font-size: 18px;
+        font-weight: 500;
+        fill: #080a10;
+        color: #080a10;
+        background-color: transparent;
+        background-image: linear-gradient(
+          90deg,
+          #ff5885 0%,
+          $primary-color 100%
+        );
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #0f110f;
+        border-radius: 100px 100px 100px 100px;
+        box-shadow: 0px 20px 60px 0px
+          rgba(255, 165.99999999999991, 83.99999999999999, 0);
+        padding: 10px 30px;
+        display: inline-block;
+      }
+    }
+
+    .right {
+      .image {
+        position: relative;
+        z-index: 100;
+
+        img {
+          width: 100%;
+          border-radius: 15px;
+        }
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border: 2px solid $primary-color;
+          border-radius: 15px;
+          position: absolute;
+          top: -20px;
+          right: -20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .language_assessment {
+    padding: 40px 0;
+
+    .line {
+      flex-direction: column;
+      gap: 60px;
+
+      > div {
+        width: 100%;
+      }
+
+      .left {
+        text-align: center;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        .title {
+          font-size: 23px;
+        }
+
+        .desc {
+          font-size: 13px;
+        }
+
+        .btn_welcome {
+          padding: 5px 20px;
+          font-size: 15px;
+        }
+      }
+
+      .right {
+        .image {
+          &::before {
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+}
+// end language_assessment
