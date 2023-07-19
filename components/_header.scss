@@ -146,6 +146,18 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main_head {
+    height: 180px;
+
+    .container {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+}
 // end main_head
 
 // start menu_mobile

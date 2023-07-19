@@ -4,6 +4,7 @@ $dark-color: #051723;
 // start your_career
 .your_career {
   padding: 100px;
+
   .line {
     display: flex;
     align-items: center;
@@ -92,7 +93,7 @@ $dark-color: #051723;
 
     .line {
       flex-direction: column;
-      gap: 60px;
+      gap: 30px;
 
       > div {
         width: 100%;
