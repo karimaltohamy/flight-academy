@@ -222,5 +222,17 @@ header {
       }
     }
   }
+
+  .btn_contact {
+    background-color: $primary-color;
+    color: white !important;
+    font-weight: 500;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 10px;
+    display: inline-block;
+  }
 }
 // end menu_mobile

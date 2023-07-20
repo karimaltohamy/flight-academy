@@ -197,6 +197,17 @@ header .container .info_header .btn_menu {
 .menu_mobile .links a.active {
   color: #d11317 !important;
 }
+.menu_mobile .btn_contact {
+  background-color: #d11317;
+  color: white !important;
+  font-weight: 500;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-top: 10px;
+  display: inline-block;
+}
 
 footer {
   padding: 80px 0 20px;

@@ -17,6 +17,8 @@
     <script src="js/bootstrap.js"></script>
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- start header -->
@@ -45,7 +47,7 @@
           </a>
 
           <a href="applications.html" class="btn_contact">Apply Now</a>
-          <span class="btn_menu">
+          <span class="btn_menu icon_menu">
             <i class="fa-solid fa-bars"></i>
           </span>
         </div>
@@ -70,6 +72,7 @@
         <a href="campus.html" class="link">Campus</a>
         <a href="FAQs.html" class="link active">FAQs</a>
       </div>
+      <a href="applications.html" class="btn_contact">Apply Now</a>
     </div>
     <!-- end menu mobile -->
 
@@ -84,12 +87,31 @@
     <!-- start faq section -->
     <div class="faq_section">
       <div class="container">
-        <div class="subtitle">GET INFORMATION</div>
-        <h1 class="title">Frequently asked some questions</h1>
+        <div
+          class="subtitle"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="300"
+        >
+          GET INFORMATION
+        </div>
+        <h1
+          class="title"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
+          Frequently asked some questions
+        </h1>
         <div class="line">
           <div class="left">
             <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-aos-duration="300"
+              >
                 <h2 class="accordion-header" id="headingOne">
                   <button
                     class="accordion-button"
@@ -118,7 +140,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-aos-duration="500"
+              >
                 <h2 class="accordion-header" id="headingTwo">
                   <button
                     class="accordion-button collapsed"
@@ -156,7 +183,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-aos-duration="700"
+              >
                 <h2 class="accordion-header" id="headingThree">
                   <button
                     class="accordion-button collapsed"
@@ -184,7 +216,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-aos-duration="900"
+              >
                 <h2 class="accordion-header" id="headingFour">
                   <button
                     class="accordion-button collapsed"
@@ -219,7 +256,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-aos-duration="1100"
+              >
                 <h2 class="accordion-header" id="headingFive">
                   <button
                     class="accordion-button collapsed"
@@ -248,7 +290,12 @@
           </div>
           <div class="right">
             <div class="accordion" id="accordionExample2">
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-aos-duration="300"
+              >
                 <h2 class="accordion-header" id="headingSix">
                   <button
                     class="accordion-button"
@@ -274,7 +321,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-aos-duration="500"
+              >
                 <h2 class="accordion-header" id="headingSeven">
                   <button
                     class="accordion-button collapsed"
@@ -311,7 +363,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-aos-duration="700"
+              >
                 <h2 class="accordion-header" id="headingEight">
                   <button
                     class="accordion-button collapsed"
@@ -346,7 +403,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-aos-duration="900"
+              >
                 <h2 class="accordion-header" id="headingNine">
                   <button
                     class="accordion-button collapsed"
@@ -379,7 +441,12 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div
+                class="accordion-item"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-aos-duration="1100"
+              >
                 <h2 class="accordion-header" id="headingTen">
                   <button
                     class="accordion-button collapsed"
@@ -487,5 +554,9 @@
     <!-- end footer -->
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
