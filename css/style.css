@@ -3216,3 +3216,97 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.whats_app_icon {
+  position: fixed;
+  bottom: 30px;
+  right: 19px;
+  height: 70px;
+  background: rgba(137, 189, 73, 0.25);
+  border: none;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+  border-radius: 100%;
+  color: #fff;
+  padding: 0;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  font-size: 0;
+  font-weight: bold;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.whats_app_icon .icon {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d11317;
+  border-radius: 50%;
+  margin: 10px 0 10px 10px;
+  -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.whats_app_icon .icon::before {
+  content: "";
+  position: fixed;
+  display: block;
+  height: 70px;
+  width: 70px;
+  background: rgba(162, 163, 243, 0.4);
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: 3s ease-in-out infinite pulse;
+          animation: 3s ease-in-out infinite pulse;
+}
+.whats_app_icon .icon i {
+  color: white;
+  font-size: 30px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
